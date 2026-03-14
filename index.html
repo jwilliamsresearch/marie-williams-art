@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <title>Marie Williams - Contemporary Landscape Artist</title>
+</head>
+
+<body>
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <div class="container-md text-white">
+          <div class="row">
+            <div class="col-md-6">
+              Marie Williams is a contemporary painter working in both oils and mixed media. The impetus for her work comes from travelling through the Nottinghamshire landscape.
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+              <div class="list-group list-group-flush">
+                <a href="cv.html" class="bg-dark text-white list-group-item list-group-item-action">CV</a>
+                <a href="https://www.instagram.com/mariewilliamsart/" class="bg-dark text-white list-group-item list-group-item-action">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-md">
+        <a href="index.html" class="main-title pt-3">
+          <h1 class="mb-0">Marie Williams</h1>
+          <small>Contemporary Landscape Artist</small></p>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-md text-center">
+    <div class="jumbotron bg-white">
+      <h2>Marie Williams</h2>
+      <p class="mx-auto w-75">Marie Williams is a contemporary painter working in both oils and mixed media. The impetus for her work comes from travelling through the Nottinghamshire landscape. <br><br>
+        She enjoys finding beauty in familiar places, pockets of wilderness on her doorstep. Working directly in situ Marie gathers and records information by drawing outside using a range of media. Graphite, charcoal and soft pastels provides freedom for experimentation. The aim is to capture an emotion of being in a particular place.
+        <br><br>
+        Taking inspiration from nature she is constantly asking broader questions concerning land formation, boundaries and the effects of weathering.
+        <br><br>
+        As work develops and memories are made, it can signify a visceral response rather than a direct representation. </p>
+    </div>
+  </div>
+
+  <div class="container-md mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card m-2">
+          <img src="images/image2.jpg" alt="An image of art." class="card-img-top" data-toggle="modal" data-target="#bigImage" onclick="openImage(2)">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card m-2">
+          <img src="images/image1.jpg" alt="An image of art." class="card-img-top" data-toggle="modal" data-target="#bigImage" onclick="openImage(1)">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card m-2">
+          <img src="images/image3.jpg" alt="An image of art." class="card-img-top" data-toggle="modal" data-target="#bigImage" onclick="openImage(3)">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card m-2">
+          <img src="images/image5.jpg" alt="An image of art." class="card-img-top" data-toggle="modal" data-target="#bigImage" onclick="openImage(5)">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card m-2">
+          <img src="images/image4.jpg" alt="An image of art." class="card-img-top" data-toggle="modal" data-target="#bigImage" onclick="openImage(4)">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card m-2">
+          <img src="images/image6.jpg" alt="An image of art." class="card-img-top" data-toggle="modal" data-target="#bigImage" onclick="openImage(6)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bigImage" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img id="changeImage" class="img-fluid" src="images/image1.jpg" alt="An image of art.">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    function openImage(number) {
+      document.getElementById("changeImage").src = "images/image" + number + ".jpg";
+    }
+
+  </script>
+</body>
+
+</html>
